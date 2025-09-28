@@ -38,7 +38,7 @@
     "eslint-plugin-header": "3.1.1",
     "eslint-plugin-import": "2.25.4",
     
-    "eslint-plugin-mattermost": "https://github.com/mosmosbosbos/eslint-plugin-workspace.git#23abcf9988f7fa00d26929f11841aab7ccb16b2b",
+    "eslint-plugin-workspace": "https://github.com/mosmosbosbos/eslint-plugin-workspace.git#23abcf9988f7fa00d26929f11841aab7ccb16b2b",
     "eslint-plugin-react": "7.28.0",
     "pkg": "5.5.1",
     "typescript": "^5.0.4",
