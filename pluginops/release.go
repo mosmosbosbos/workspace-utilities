@@ -411,10 +411,10 @@ func confirmPrompt(msg string) (bool, error) {
 
 func GetRepoURL(originURL string) (string, string, error) {
 	switch {
-	case strings.HasPrefix(originURL, "https://github.com/"):
-		originURL = strings.TrimPrefix(originURL, "https://github.com/")
-	case strings.HasPrefix(originURL, "git@github.com:"):
-		originURL = strings.TrimPrefix(originURL, "git@github.com:")
+	case strings.HasPrefix(originURL, ""):
+		originURL = strings.TrimPrefix(originURL, "")
+	case strings.HasPrefix(originURL, ""):
+		originURL = strings.TrimPrefix(originURL, "")
 	default:
 		return "", "", errors.Errorf("unknown prefix of origin URL %s", originURL)
 	}

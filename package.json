@@ -1,7 +1,6 @@
 {
   "name": "mmjstool",
   "version": "1.0.0",
-  "description": "Mattermost js source code utilities",
   "main": "mmjstool/build/src/index.js",
   "bin": {
     "mmjstool": "./bin/mmjstool"

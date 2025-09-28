@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	mattermostAtlassianUrl = "https://mattermost.atlassian.net"
+	mattermostAtlassianUrl = ""
 )
 
 type customFields struct {

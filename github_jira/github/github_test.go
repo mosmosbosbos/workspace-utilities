@@ -22,7 +22,7 @@ func Test_ParseRepoHappyPath(t *testing.T) {
 }
 
 func Test_ParseRepoTooLong(t *testing.T) {
-	repoStr := "https://github.com/mattermost/mattermost-utilities"
+	repoStr := ""
 	r, err := ParseRepo(repoStr)
 	if err == nil {
 		t.Errorf("Expected to fail parsing repo, but got owner %s and repo %s", r.owner, r.repo)
@@ -39,7 +39,7 @@ func Test_ParseRepoEmpty(t *testing.T) {
 
 func Test_ReportPrint(t *testing.T) {
 	expected := "asdf"
-	htmlUrl := "https://github.com/mattermost/mattermost-server/issues/4321"
+	htmlUrl := ""
 	(&CreateOutcome{
 		LinkedIssues: []LinkedIssue{
 			{

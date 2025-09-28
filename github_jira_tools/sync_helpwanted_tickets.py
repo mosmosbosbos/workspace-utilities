@@ -21,7 +21,7 @@ def cli(jira_username, jira_token, github_token, webhook_url, dry_run, debug):
             "fields": ["summary", "description", "attachment"],
     }
     resp = requests.post(
-        "https://mattermost.atlassian.net/rest/api/2/search",
+        "",
         json=data,
         auth=HTTPBasicAuth(jira_username, jira_token)
     )

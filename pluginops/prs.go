@@ -139,7 +139,7 @@ func getPluginPRs(ctx context.Context, client *github.Client) ([]*prInfo, error)
 	for _, issue := range issues.Issues {
 		if issue.IsPullRequest() {
 			url := issue.GetHTMLURL()
-			url = strings.TrimPrefix(url, "https://github.com/")
+			url = strings.TrimPrefix(url, "")
 			url = strings.TrimPrefix(url, org+"/")
 
 			repo := strings.Split(url, "/")[0]

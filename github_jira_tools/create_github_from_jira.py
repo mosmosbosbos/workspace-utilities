@@ -36,7 +36,7 @@ def cli(jira_token, jira_username, github_token, repo, labels, dry_run, debug, i
             "fields": ["summary", "description"],
     }
     resp = requests.post(
-        "https://mattermost.atlassian.net/rest/api/2/search",
+        "",
         json=data,
         auth=HTTPBasicAuth(jira_username, jira_token)
     )

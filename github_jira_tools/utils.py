@@ -51,7 +51,7 @@ JIRA: https://mattermost.atlassian.net/browse/{{TICKET}}
 
         try:
             resp = requests.put(
-                "https://mattermost.atlassian.net/rest/api/3/issue/"+key,
+                ""+key,
                 json={
                     "fields": {
                         "customfield_11106": new_issue.html_url,

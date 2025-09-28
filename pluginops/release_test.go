@@ -15,25 +15,25 @@ func TestGetRepoURL(t *testing.T) {
 		expectedError bool
 	}{
 		"http URL": {
-			url:           "https://github.com/mattermost/mattermost-plugin-starter-template.git",
+			url:           "",
 			org:           "mattermost",
 			repo:          "mattermost-plugin-starter-template",
 			expectedError: false,
 		},
 		"http URL with trailing slash": {
-			url:           "https://github.com/mattermost/mattermost-plugin-starter-template.git/",
+			url:           "",
 			org:           "",
 			repo:          "",
 			expectedError: true,
 		},
 		"ssh URL": {
-			url:           "git@github.com:mattermost/mattermost-plugin-starter-template.git",
+			url:           "",
 			org:           "mattermost",
 			repo:          "mattermost-plugin-starter-template",
 			expectedError: false,
 		},
 		"ssh URL with trailing slash": {
-			url:           "git@github.com:mattermost/mattermost-plugin-starter-template.git/",
+			url:           "",
 			org:           "",
 			repo:          "",
 			expectedError: true,
